@@ -20,7 +20,7 @@ fetch('./data.json')
                 <span class="testType">
                     ${item.category}
                 </span>
-                <span class="value">
+                <span>
                     <span class="mark">${item.score}</span>
                     <span class="max"> / 100</span>    
                 </span>
