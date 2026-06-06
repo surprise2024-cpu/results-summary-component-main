@@ -1,0 +1,230 @@
+:root {
+    /*background*/
+    --bg: hsl(221, 100%, 96%);
+    --surface: #ffffff;
+    --border: hsl(0, 0%, 90%);
+
+    /*Gradient for left card*/
+    --gradient-start: hsl(252, 100%, 67%);
+    --gradient-end: hsl(241, 81%, 54%);
+
+    /*Circle gradient*/
+    --circle-start: hsl(256, 72%, 46%);
+    --circle-end: hsl(241, 72%, 46%);
+
+    /*Text color*/
+    --text-primary: hsl(224, 30%, 27%);
+    --text-light: hsl(241, 100%, 89%);   
+    --text-white: #ffffff;
+
+    /*Categories*/
+    --reaction-bg: hsl(0, 100%, 97%);
+    --reaction-text: hsl(0, 100%, 67%);
+
+    --memory-bg: hsl(39, 100%, 97%);
+    --memory-text: hsl(39, 100%, 56%);
+
+    --verbal-bg: hsl(166, 100%, 97%);
+    --verbal-text: hsl(166, 100%, 37%);
+
+    --visual-bg: hsl(234, 85%, 97%);
+    --visual-text: hsl(234, 85%, 45%);
+
+    /*Button*/
+    --button-bg: hsl(224, 30%, 27%);
+    --button-hover: hsl(252, 100%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 600px;
+    max-height: 450px;
+    background-color: var(--surface);
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/*Left (?) card*/
+
+h2 {
+    color: var(--text-light);
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.result {
+    background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+    color: var(--text-white);
+    padding: 2rem;
+    flex: 0.9;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.score {
+    background: radial-gradient(circle at top, var(--circle-start), var(--circle-end) 1%, transparent 90%);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.score-value {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.score p {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.result h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+/*Right card*/
+.summary {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.summary h2 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);    
+}
+
+.value {
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.value .mark {
+    color: var(--text-primary);
+}
+.value .max {
+    color: var(--text-light);
+}
+
+.category {
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.category .verbal {
+    padding-left: 2rem;
+}
+
+.reaction {
+    background-color: var(--reaction-bg);
+    color: var(--reaction-text);
+}
+
+.reaction .testType {
+    margin-left: 0.5rem;
+}
+
+.reaction .value {
+    margin-left: auto;
+}
+
+.memory {
+    background-color: var(--memory-bg);
+    color: var(--memory-text);
+}
+
+.memory .testType {
+    margin-left: 0.5rem;
+}
+
+.memory .value {
+    margin-left: auto;
+}
+
+.verbal {
+    background-color: var(--verbal-bg);
+    color: var(--verbal-text);
+}
+
+.verbal .testType {
+    margin-left: 0.5rem;
+}
+
+.verbal .value {
+    margin-left: auto;
+}
+
+.visual {
+    background-color: var(--visual-bg);
+    color: var(--visual-text);
+}
+
+.visual .testType {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.visual .value {
+    margin-left: auto;
+}
+
+.dividerBtn {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--text-white);
+    border: none;
+    padding: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
