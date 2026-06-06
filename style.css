@@ -137,7 +137,7 @@ h3 {
     color: var(--text-primary);
 }
 .value .max {
-    color: var(--text-light);
+    color: gray;
 }
 
 .category {
