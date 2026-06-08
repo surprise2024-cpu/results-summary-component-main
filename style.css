@@ -231,10 +231,6 @@ button:hover {
 /* Mobile devices */
 @media (max-width: 600px) {
 
-    hamburger {
-        display: flex;
-    }
-
     .container {
         flex-direction: column;
         max-width: 100%;
