@@ -229,7 +229,7 @@ button:hover {
 }
 
 /*Mobile devices*/
-@media (max-width: 640px) {
+/*@media (max-width: 640px) {
     .container {
         flex-direction: column;
         max-width: 100%;
@@ -271,10 +271,10 @@ button:hover {
         padding: 1rem;
         font-size: 1rem;
     }
-}
+}*/
 
 /*Tablet device*/
-@media (min-width: 650px) {
+/*@media (min-width: 650px) {
     .container {
         flex-direction: column;
         max-width: 700px;
@@ -311,4 +311,4 @@ button:hover {
         padding: 1rem;
         font-size: 1rem;
     }
-}   
+}  */ 
