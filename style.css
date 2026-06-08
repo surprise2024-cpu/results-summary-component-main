@@ -125,12 +125,12 @@ h3 {
 
 .summary h2 {
     margin-bottom: 1rem;
-    color: var(--text-dark);    
+    color: var(--text-primary);    
 }
 
 .value {
     font-weight: bold;
-    color: var(--text-dark);
+    color: var(--text-primary);
 }
 
 .value .mark {
@@ -234,7 +234,6 @@ button:hover {
     .container {
         flex-direction: column;
         max-width: 100%;
-        max-height: auto;
         border-radius: 0;
         box-shadow: none;
     }
