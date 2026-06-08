@@ -235,6 +235,7 @@ button:hover {
         max-width: 100%;
         max-height: auto;
         border-radius: 0;
+        box-shadow: none;
     }
 
     .result {
@@ -249,13 +250,13 @@ button:hover {
     }
 
     .score {
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
         margin: 1.5rem auto;
     }
 
     .score-value {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .result h3 {
@@ -263,7 +264,7 @@ button:hover {
     }
 
     .description {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     button {
@@ -290,8 +291,8 @@ button:hover {
     }
 
     .score {
-        width: 140px;
-        height: 140px;
+        width: 160px;
+        height: 160px;
     }
 
     .score-value {
@@ -303,7 +304,7 @@ button:hover {
     }
 
     .description {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     button {
