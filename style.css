@@ -227,3 +227,87 @@ button {
 button:hover {
     background-color: var(--button-hover);
 }
+
+/*Mobile devices*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+        max-height: auto;
+        border-radius: 0;
+    }
+
+    .result {
+        flex: none;
+        border-radius: 0 0 30px 30px;
+        padding: 2rem 1rem;
+    }
+
+    .summary {
+        flex: none;
+        padding: 2rem 1rem;
+    }
+
+    .score {
+        width: 120px;
+        height: 120px;
+        margin: 1.5rem auto;
+    }
+
+    .score-value {
+        font-size: 1.5rem;
+    }
+
+    .result h3 {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+/*Tablet device*/
+@media ((min-width: 769px) and (max-width: 1024px))  {
+    .container {
+        flex-direction: column;
+        max-width: 700px;
+        border-radius: 20px;
+    }
+
+    .result {
+        border-radius: 0 0 20px 20px;
+        padding: 2rem;
+    }
+
+    .summary {
+        padding: 2rem;
+    }
+
+    .score {
+        width: 140px;
+        height: 140px;
+    }
+
+    .score-value {
+        font-size: 3rem;
+    }
+
+    .result h3 {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}   
