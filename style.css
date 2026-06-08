@@ -229,7 +229,7 @@ button:hover {
 }
 
 /* Mobile devices */
-@media (max-width: 650px) {
+@media (max-width: 600px) {
 
     hamburger {
         display: flex;
