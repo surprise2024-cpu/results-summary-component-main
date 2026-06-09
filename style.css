@@ -32,7 +32,7 @@
 
     /*Button*/
     --button-bg: hsl(224, 30%, 27%);
-    --button-hover: hsl(252, 100%, 67%);
+    --button-hover: hsl(252, 94%, 57%);
 }
 
 * {
@@ -283,7 +283,6 @@ button:hover {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        /*max-width: 700px;*/
         border-radius: 20px;
     }
 
