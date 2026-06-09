@@ -54,7 +54,7 @@ body {
 .container {
     display: flex;
     max-width: 600px;
-    max-height: 450px;
+    /*max-height: 450px;*/
     background-color: var(--surface);
     border-radius: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -242,6 +242,7 @@ button:hover {
         max-width: 100%;
         border-radius: 0;
         box-shadow: none;
+        overflow: visible;
     }
 
     .result {
