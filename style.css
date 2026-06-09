@@ -54,7 +54,6 @@ body {
 .container {
     display: flex;
     max-width: 600px;
-    /*max-height: 450px;*/
     background-color: var(--surface);
     border-radius: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -281,7 +280,7 @@ button:hover {
 }
 
 /*Tablet device*/
-@media ((min-width: 641px) and (max-width: 768px)) {
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
         max-width: 700px;
